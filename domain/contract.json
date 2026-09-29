@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "product": "教育资源共享预约",
+  "source_context": "http://edu.people.com.cn/n1/2026/0924/c1006-40804945.html",
+  "actors": [
+    "资源提供高校",
+    "申请高校",
+    "区域协调员"
+  ],
+  "states": [
+    "申请",
+    "暂占",
+    "确认",
+    "使用",
+    "释放"
+  ],
+  "invariants": [
+    "容量分录",
+    "优先级规则",
+    "过期清理",
+    "并发预约"
+  ],
+  "sample_cases": [
+    {
+      "case_id": "09301-015-A",
+      "actor": "资源提供高校",
+      "state": "申请"
+    },
+    {
+      "case_id": "09301-015-B",
+      "actor": "区域协调员",
+      "state": "暂占"
+    }
+  ],
+  "tags": [
+    "resource-sharing",
+    "capacity-booking"
+  ]
+}
